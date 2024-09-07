@@ -44,6 +44,23 @@ body {
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
+
+.circle1 {
+    top: 5%;
+}
+
+.circle2 {
+    top: 31%;
+}
+
+.circle3 {
+    top: 58%;
+}
+
+.circle4 {
+    top: 84%;
+}
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column; 
@@ -57,6 +74,75 @@ body {
     }
     
     .vertical-line {
-        display: none; 
+        display: relative;
+        margin-left: 15px;
+    }
+
+    .circle {
+        left: 0;
+    }
+
+    .circle1 {
+        top: 2%;
+    }
+
+    .circle2 {
+        top: 14.75%;
+    }
+
+    .circle3 {
+        top: 27.5%;
+    }
+
+    .circle4 {
+        top: 40.25%;
+    }
+
+    .circle1::after {
+        content: '';
+        position: absolute;
+        top: 645px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle2::after {
+        content: '';
+        position: absolute;
+        top: 645px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle3::after {
+        content: '';
+        position: absolute;
+        top: 645px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle4::after {
+        content: '';
+        position: absolute;
+        top: 645px;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        background-color: red;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
     }
 }
